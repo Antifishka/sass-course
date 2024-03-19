@@ -1,26 +1,297 @@
 <!DOCTYPE html>
 <html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/sass.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SASS Project</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/sass.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SASS Project</title>
-</head>
-<body class="page">
-  <aside class="sidebar js-menu" id="sidebar-menu">
-  </aside>
+  <body class="page">
+    <aside class="sidebar js-menu" id="sidebar-menu">
+      <nav class="menu">
+        <button class="menu-btn js-menu-close"
+        type="button"
+        aria-label="Close menu">
+          <svg class="menu-btn-icon" width="20" height="20">
+            <use href="./src/img/icons.svg#icon-x-close"></use>
+          </svg>
+        </button>
 
-  <header class="header"></header>
+        <a class="logo" href="./index.html">
+          <svg class="logo-icon" width="24" height="24">
+            <use href="./src/img/icons.svg#icon-logo"></use>
+          </svg>
+          Cat CRM
+        </a>
+      </nav>
 
-  <main class="main">
-    <section class="welcome"></section>
+      <ul class="menu-list">
+        <li class="menu-item">
+          <a class="menu-link current" href="./index.html">
+            <svg class="menu-icon" width="20" height="20">
+              <use href="./src/img/icons.svg#menu-columns"></use>
+            </svg>
+            Overview
+          </a>
+        </li>
 
-    <section class="co-workers"></section>
+        <li class="menu-item">
+          <a class="menu-link" href="">
+            <svg class="menu-icon" width="20" height="20">
+              <use href="./src/img/icons.svg#menu-person-plus"></use>
+            </svg>
+          </a>
+          Contacts
+        </li>
 
-    <section class="tasks"></section>
+        <li class="menu-item">
+          <a class="menu-link" href="">
+            <svg class="menu-icon" width="20" height="20">
+              <use href="./src/img/icons.svg#menu-briefcase"></use>
+            </svg>
+          </a>
+          Companies
+        </li>
 
-    <section class="reports"></section>
-  </main>
-</body>
+        <li class="menu-item">
+          <a class="menu-link" href="">
+            <svg class="menu-icon" width="20" height="20">
+              <use href="./src/img/icons.svg#menu-coin"></use>
+            </svg>
+          </a>
+          Deals
+        </li>
+
+        <li class="menu-item">
+          <a class="menu-link" href="">
+            <svg class="menu-icon" width="20" height="20">
+              <use href="./src/img/icons.svg#menu-clipboard"></use>
+            </svg>
+          </a>
+          Document
+        </li>
+
+        <li class="menu-item">
+          <a class="menu-link" href="">
+            <svg class="menu-icon" width="20" height="20">
+              <use href="./src/img/icons.svg#menu-envelope"></use>
+            </svg>
+          </a>
+          Mesage
+        </li>
+
+        <li class="menu-item">
+          <a class="menu-link" href="">
+            <svg class="menu-icon" width="20" height="20">
+              <use href="./src/img/icons.svg#menu-celedar"></use>
+            </svg>
+          </a>
+          Calendar
+        </li>
+
+        <li class="menu-item">
+          <a class="menu-link" href="">
+            <svg class="menu-icon" width="20" height="20">
+              <use href="./src/img/icons.svg#menu-journal"></use>
+            </svg>
+          </a>
+          Report
+        </li>
+      </ul>
+    </aside>
+  
+    <header class="header">
+      <button class="menu-btn js-menu-open"
+      type="button"
+      aria-expanded="false"
+      aria-controls="sidebar-menu">
+        <svg class="menu-btn-icon" width="24" height="24">
+          <use href="./src/img/icons.svg#icon-menu"></use>
+        </svg>
+        Overview
+      </button>
+      
+      <label class="search-field">
+        <svg class="search-icon" width="20" height="20">
+          <use href="./src/img/icons.svg#icon-search"></use>
+        </svg>
+        <input class="search-input"
+          type="search"
+          name="user_search"
+          placeholder="Search Something..."/>
+      </label>
+    </header>
+  
+    <main class="main">
+      <section class="welcome">welcome</section>
+  
+      <section class="co-workers">
+        <div class="co-workers-wrapper">
+          <h2 class="co-workers-title">
+            <span>Co-workwers</span>
+            Marketing department
+          </h2>
+
+          <div class="co-workers-container">
+            <details class="co-workers-details">
+              <summary class="co-workers-data">
+                <svg class="co-workers-icon" width="16" height="16">
+                  <use class="plus" href="./src/img/icons.svg#icon-plus"></use>
+                  <use class="minus" href="./src/img/icons.svg#icon-minus"></use>
+                </svg>
+                <div class="co-workers-bio">
+                  <div class="thumb">
+                    <img src="./src/img/avatars/avatar-1.jpg" 
+                      alt=""
+                      width="42"
+                      height="63">
+                  </div>
+                  <p class="co-workers-caption">Andrew Mike</p>
+                </div>
+
+                <div class="co-workers-controls">
+                  <button class="controls-btn" type="button">
+                    <svg class="controls-btn-icon success"
+                      width="20"
+                      height="20">
+                      <use href="./src/img/icons.svg#icon-arrow-clockwise"></use>
+                    </svg>
+                  </button>
+
+                  <button class="controls-btn" type="button">
+                    <svg class="controls-btn-icon error" width="20" height="20">
+                      <use href="./src/img/icons.svg#icon-x-close"></use>
+                    </svg>
+                  </button>
+                </div>
+              </summary>
+
+              <div class="co-workers-info">
+                <h3 class="co-workers-position">Job position</h3>
+                <p>Develop</p>
+                <h3 class="co-workers-accept">Since</h3>
+                <p>2013</p>
+              </div>
+            </details>
+
+          </div>
+        </div>
+      </section>
+  
+      <section class="tasks">
+        <h2 class="tasks-title"><span>Tasks (5)</span>| Today</h2>
+        <ul class="tasks-list">
+          <li class="tasks-item">
+            <label class="tasks-checkbox">
+              <input class="tasks-input visually-hidden"
+              type="checkbox"
+              name="task_status"
+              value="unfinished" />
+              <svg class="tasks-checkbox-icon" width="20" height="20">
+                <use href="./src/img/icons.svg#icon-done"></use>
+              </svg>
+            </label>
+
+            <div class="tasks-info">
+              <h3 class="tasks-heading">Update the documentation</h3>
+              <p class="tasks-desc">
+                Dwuamish Head, Seattle, WA <time>8:47 AM</time>
+              </p>
+            </div>
+
+            <button class="tasks-btn" type="button">
+              <svg class="tasks-btn-icon" width="20" height="20">
+                <use href="./src/img/icons.svg#icon-gear"></use>
+              </svg>
+            </button>
+          </li>
+
+          <li>
+            <label for="">
+              <input type="text">
+              <svg>
+                <use></use>
+              </svg>
+            </label>
+          </li>
+
+          <li>
+            <label for="">
+              <input type="text">
+              <svg>
+                <use></use>
+              </svg>
+            </label>
+          </li>
+
+          <li>
+            <label for="">
+              <input type="text">
+              <svg>
+                <use></use>
+              </svg>
+            </label>
+          </li>
+        </ul>
+      </section>
+  
+      <section class="reports">
+        <h2 class="reports-title"><span>Task Report</span>| Last 2 Weeks</h2>
+        <ul class="reports-list">
+          <li class="reports-item" data-status="up">
+            <div class="reports-co-worker co-worker">
+              <div class="co-worker-thumb">
+                <img class="co-worker-avatar"
+                src="./src/img/avatars/thumb.svg" 
+                alt="Ibnu Mas’ud"
+                width="32"
+                height="32" />
+              </div>
+              <h3 class="co-worker-caption">Ibnu Mas’ud</h3>
+            </div>
+
+            <progress class="reports-bar" id="report-ibnu" max="100" value="89">
+              <!-- For older browser, which doesn't support <progress> styles -->
+                <div class="progress-bar">
+                  <span style="width: 89%;">Progress: 89%</span>
+                </div>
+            </progress>
+
+            <svg class="reports-status" width="20" height="20">
+              <use class="up" href="./src/img/icons.svg#icon-up"></use>
+              <use class="dash" href="./src/img/icons.svg#icon-dash"></use>
+              <use class="down" href="./src/img/icons.svg#icon-down"></use>
+            </svg>
+          </li>
+
+          <li>
+            <div>
+              <div><img src="" alt=""></div>
+            </div>
+          </li>
+
+          <li>
+            <div>
+              <div><img src="" alt=""></div>
+            </div>
+          </li>
+
+          <li>
+            <div>
+              <div><img src="" alt=""></div>
+            </div>
+          </li>
+          
+          <li>
+            <div>
+              <div><img src="" alt=""></div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <script type="module" src="./src/js/main.js"></script>
+  </body>
 </html>
