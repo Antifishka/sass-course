@@ -28,11 +28,11 @@
   }
 }
 
-@mixin frame($width, $height: $width, $is-cirle: false){
+@mixin frame($width, $height: $width, $is-circle: false){
  width: $width;
  height: $height;
 
- @if $is-cirle{
+ @if $is-circle{
   border-radius: 50%;
   overflow: hidden;
  }
@@ -50,7 +50,7 @@
 
   &::-webkit-scrollbar-track{
     background-color: transparent;
-    border-radius: 104px;
+    border-radius: 100px;
 
     &:hover{
       background-color: rgba(#fff, 0.3);
