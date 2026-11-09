@@ -73,7 +73,7 @@
   @if map.has-key(var.$easings, $ease){
     $ease: map.get(var.$easings, $ease);
 
-    transition: ease;
+    transition: $ease;
   } @else {
     @warn 'The variable $ease is not defined'
   }
