@@ -58,7 +58,7 @@
   }
 
   &::-webkit-scrollbar-thumb{
-    background-color: fn.get-color('ight-secondary');
+    background-color: fn.get-color('light-secondary');
     background-clip: content-box;
     border: 5px solid transparent;
     border-radius: 100px;
